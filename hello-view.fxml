@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1080.0" style="-fx-background-color: #00938b;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="800.0" prefWidth="1080.0">
+            <children>
+                <Text layoutX="124.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Телефонный справочник для шиномонтажа" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="35.0" />
+                    </font>
+                </Text>
+                <SplitPane dividerPositions="0.4468980021030494" layoutX="61.0" layoutY="124.0" prefHeight="355.0" prefWidth="953.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                            <children>
+                                <TableView layoutX="61.0" layoutY="35.0" prefHeight="353.0" prefWidth="389.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                    <columns>
+                                        <TableColumn prefWidth="75.0" text="№" />
+                                        <TableColumn prefWidth="75.0" text="Имя " />
+                                        <TableColumn prefWidth="75.0" text="Фамилия" />
+                                        <TableColumn prefWidth="87.0" text="Автомобиль" />
+                                        <TableColumn prefWidth="102.0" text="Дата поломки" />
+                                    </columns>
+                                    <columnResizePolicy>
+                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                            <children>
+                                <Label layoutX="139.0" layoutY="29.0" text="Детальная информация о клиенте" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="29.0">
+                                    <font>
+                                        <Font name="System Bold Italic" size="13.0" />
+                                    </font>
+                                </Label>
+                                <GridPane layoutX="28.0" layoutY="63.0" prefHeight="254.0" prefWidth="471.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label text="Номер клиента">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="26.0" text="Имя" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="77.0" text="Фамилия" GridPane.rowIndex="2">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="128.0" text="Автомобиль " GridPane.rowIndex="3">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="179.0" text="Дата поломки" GridPane.rowIndex="4">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="26.0" text="Метка 1" GridPane.columnIndex="1">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="246.0" layoutY="26.0" text="Метка 2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="246.0" layoutY="77.0" text="Метка 3" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="246.0" layoutY="128.0" text="Метка 4" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="246.0" layoutY="179.0" text="Метка 5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                            <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+                <ButtonBar layoutX="434.0" layoutY="526.0" prefHeight="40.0" prefWidth="580.0">
+                    <buttons>
+                        <Button mnemonicParsing="false" text="Новый...">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Редактировать...">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Удалить">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Сохранить">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                    </Button>
+                    </buttons>
+                </ButtonBar>
+                <Label fx:id="welcomeText"/>
+                <Button layoutX="988.0" layoutY="57.0" mnemonicParsing="false" text="Цвет" onAction="#onHelloButtonClick" />
+
+                <TextField layoutX="61.0" layoutY="526.0" prefHeight="26.0" prefWidth="201.0" promptText="Поиск">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </TextField>
+                <Button layoutX="303.0" layoutY="526.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Найти">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</TilePane>
