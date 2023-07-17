@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1080.0" style="-fx-background-color: #00938b;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<TilePane fx:id="MainForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1080.0" style="-fx-background-color: #00938b;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="component.main.MainController">
     <children>
         <AnchorPane prefHeight="800.0" prefWidth="1080.0">
             <children>
@@ -121,10 +121,10 @@
                 </SplitPane>
                 <ButtonBar layoutX="434.0" layoutY="526.0" prefHeight="40.0" prefWidth="580.0">
                     <buttons>
-                        <Button mnemonicParsing="false" text="Новый...">
-                            <padding>
-                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                            </padding>
+                        <Button mnemonicParsing="false" text="Новый..." onAction="#showPopupWindow">
+                                <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                </padding>
                         </Button>
                         <Button mnemonicParsing="false" text="Редактировать...">
                             <padding>
@@ -143,8 +143,8 @@
                     </Button>
                     </buttons>
                 </ButtonBar>
-                <Label fx:id="welcomeText"/>
-                <Button layoutX="988.0" layoutY="57.0" mnemonicParsing="false" text="Цвет" onAction="#onHelloButtonClick" />
+                <Label fx:id="colorChangeId" />
+                    <Button fx:id="ButChangeId" layoutX="988.0" layoutY="57.0" mnemonicParsing="false" text="Цвет" onAction="#onColorButtonClick" />
 
                 <TextField layoutX="61.0" layoutY="526.0" prefHeight="26.0" prefWidth="201.0" promptText="Поиск">
                     <padding>
